@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anak Tangga</title>
+  <link rel="stylesheet" href="anaktangga.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <h1> Program Anak Tangga</h1>
+    <p class="sub">Masukkan jumlah anak tangga (maks. 10), lalu pilih warna tangga..</p>
+
+    <div class="card">
+      <label for="jumlah">Jumlah Anak Tangga</label>
+      <input type="number" id="jumlah" min="1" max="10" value="5" inputmode="numeric">
+      <div class="hint">Pilih angka 1-10 </div>
+
+      <label style="margin-top:16px;">Warna</label>
+      <div class="warna-row" id="warnaRow"></div>
+    </div>
+
+    <div class="card">
+      <div class="stage" id="stage">
+        <div class="empty-note">Pilih warna untuk membuat tangga…</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="anaktangga.js"></script>
+</body>
+
+</html>
